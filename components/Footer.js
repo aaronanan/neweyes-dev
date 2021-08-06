@@ -1,11 +1,7 @@
-import styles from './Footer.module.css'
+import React from "react";
 
-export default function Footer() {
-  return (
-    <>
-      <footer className={styles.footer}>
-        Made with <img src="/netliheart.svg" alt="Netlify Logo" className={styles.logo} /> for you
-      </footer>
-    </>
-  )
-}
+const Footer = () => {
+  return <div className="h-40 bg-white absolute"></div>;
+};
+
+export default Footer;
