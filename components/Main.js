@@ -19,20 +19,20 @@ const Main = () => {
       {/* // Phone Display */}
       <div className="flex flex-row justify-between md:hidden">
         <div className="mt-5">
-          <Image src={ShapeLeft} height={270} width={120} />
+          <Image src={ShapeLeft} height={270} width={120} priority={true} />
         </div>
         <div className="mt-14">
-          <Image src={ShapeRight} height={270} width={120} />
+          <Image src={ShapeRight} height={270} width={120} priority={true} />
         </div>
       </div>
 
       {/* // Desktop Display */}
       <div className="md:flex flex-row justify-between hidden">
         <div className="mt-5">
-          <Image src={ShapeLeft} height={470} width={320} />
+          <Image src={ShapeLeft} height={470} width={320} priority={true} />
         </div>
         <div className="mt-14">
-          <Image src={ShapeRight} height={470} width={320} />
+          <Image src={ShapeRight} height={470} width={320} priority={true} />
         </div>
       </div>
 
@@ -52,7 +52,7 @@ const Main = () => {
         <input
           type="button"
           value="Request Now"
-          className="w-44 h-12 mt-5 bg-secondary border-white border-4 rounded-md text-lg uppercase"
+          className="w-44 h-12 mt-5 bg-secondary border-white border-4 rounded-md text-lg uppercase hover:bg-secondaryDark"
         />
       </div>
 
@@ -64,24 +64,27 @@ const Main = () => {
                 src={WebDev}
                 width={160}
                 height={105}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
 
-            <div className="absolute rounded-xl brightness-50 filter hidden md:flex lg:hidden">
+            <div className="absolute rounded-xl brightness-50 filter hidden md:flex lg:hidden hover:bg-opacity-20 bg-primary">
               <Image
                 src={WebDev}
                 width={200}
                 height={150}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
 
-            <div className="absolute rounded-xl brightness-50 filter hidden lg:flex md:hidden">
+            <div className="absolute rounded-xl brightness-50 filter hidden lg:flex md:hidden hover:bg-opacity-20 bg-primary">
               <Image
                 src={WebDev}
                 width={250}
                 height={200}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
@@ -94,6 +97,7 @@ const Main = () => {
                 src={CustomSoftware}
                 width={160}
                 height={105}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
@@ -102,14 +106,16 @@ const Main = () => {
                 src={CustomSoftware}
                 width={200}
                 height={150}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
-            <div className="absolute rounded-xl brightness-50 filter hidden lg:flex">
+            <div className="absolute rounded-xl brightness-50 filter hidden lg:flex md:hidden hover:bg-opacity-20 bg-primary">
               <Image
                 src={CustomSoftware}
                 width={250}
                 height={200}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
@@ -204,8 +210,7 @@ const Main = () => {
           <input
             type="button"
             value="Accept"
-            className="rounded-md h-10 mt-5 text-white text-2xl"
-            style={{ backgroundColor: "#2E402B" }}
+            className="rounded-md h-12 mt-5 text-white text-2xl hover:bg-secondary bg-darkGreen"
           />
         </div>
         <div className="w-80 h-40 mx-auto mt-9">
@@ -216,7 +221,7 @@ const Main = () => {
       <div className="text-center py-20 w-screen">
         <h1 className="uppercase text-lg">Whats The Process</h1>
         <h1 className="text-2xl">Lets see how it works</h1>
-        <Image src={Process} />
+        <Image src={Process} priority={true} />
       </div>
       <Footer />
     </div>
