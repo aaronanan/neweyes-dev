@@ -3,10 +3,10 @@ import { IoEyeOutline, IoMenuOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <div className="mx-3 relative top-1">
+    <div className="mx-3 relative top-2 md:top-4">
       <div className="h-8 bg-gray-100 rounded-t-2xl flex flex-row justify-around items-center">
-        <p className="text-xs">(778) 349-0840</p>
-        <p className="text-xs">info@neweyes.ca</p>
+        <p className="text-sm">(778) 349-0840</p>
+        <p className="text-sm">info@neweyes.ca</p>
       </div>
       <div className="h-14 bg-white rounded-b-2xl flex flex-row justify-around items-center">
         <IoEyeOutline size={30} />
