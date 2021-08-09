@@ -47,7 +47,7 @@ const Main = () => {
 
       <div className="text-white text-center w-3/4 md:w-1/2 mx-auto relative bottom-10 md:bottom-60">
         <h1 className="text-xl md:text-3xl">
-          Request a free custom software and desgin review
+          Request a free custom software and design review
         </h1>
         <input
           type="button"
@@ -182,8 +182,8 @@ const Main = () => {
         </h1>
       </div>
 
-      <div className="bg-white px-4 pb-40 pt-5 lg:px-96">
-        <div className="flex flex-row justify-between">
+      <div className="bg-white w-screen pb-40 pt-5 px-4">
+        <div className="flex flex-row justify-between 2xl:px-96 2xl:mx-60 md:px-60 lg:px-40 xl:px-72">
           <input
             type="text"
             placeholder="Name"
@@ -195,7 +195,7 @@ const Main = () => {
             className="border-black border-2 rounded-md mt-5 w-40 h-9 pl-2 lg:w-72"
           />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col 2xl:px-96 2xl:mx-60 md:px-60 lg:px-40 xl:px-72">
           <input
             type="text"
             placeholder="Website URL"
